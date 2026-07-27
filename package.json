@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PrismarineJS/prismarine-physics.git"
+    "url": "https://github.com/Complexity-ML/prismarine-physics-26.2.git"
   },
   "keywords": [
     "physics",
@@ -24,9 +24,9 @@
   "author": "Romain Beaumont",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PrismarineJS/prismarine-physics/issues"
+    "url": "https://github.com/Complexity-ML/prismarine-physics-26.2/issues"
   },
-  "homepage": "https://github.com/PrismarineJS/prismarine-physics#readme",
+  "homepage": "https://github.com/Complexity-ML/prismarine-physics-26.2#readme",
   "devDependencies": {
     "expect": "^27.3.1",
     "mocha": "^11.0.1",
