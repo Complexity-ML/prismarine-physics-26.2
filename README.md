@@ -1,14 +1,21 @@
-# prismarine-physics
+# Prismarine Physics 26.2
 
-[![NPM version](https://img.shields.io/npm/v/prismarine-physics.svg)](http://npmjs.com/package/prismarine-physics)
-[![Build Status](https://github.com/PrismarineJS/prismarine-physics/workflows/CI/badge.svg)](https://github.com/PrismarineJS/prismarine-physics/actions?query=workflow%3A%22CI%22)
-[![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/GsEFRM8)
-[![Gitter](https://img.shields.io/badge/chat-on%20gitter-brightgreen.svg)](https://gitter.im/PrismarineJS/general)
-[![Irc](https://img.shields.io/badge/chat-on%20irc-brightgreen.svg)](https://irc.gitter.im/)
+Independent Complexity-ML distribution of the Prismarine player physics engine
+with Minecraft Java 26.2 feature detection for GAME LAB.
 
-[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/prismarine-physics)
+| Package | Minecraft Java | Release |
+| --- | --- | --- |
+| `prismarine-physics@1.11.0+complexity.26.2.0` | 26.2 | [`complexity-26.2.0`](https://github.com/Complexity-ML/prismarine-physics-26.2/releases/tag/complexity-26.2.0) |
 
-Provide the physics engine for minecraft entities
+The 26.2 compatibility layer enables proportional liquid gravity and
+jump-assisted climbing for the current game version while retaining the
+historical physics behavior inherited from upstream.
+
+## Installation
+
+```bash
+npm install "https://github.com/Complexity-ML/prismarine-physics-26.2/releases/download/complexity-26.2.0/prismarine-physics-complexity-26.2.0.tgz"
+```
 
 ## Usage
 
@@ -16,8 +23,8 @@ Provide the physics engine for minecraft entities
 const { Physics, PlayerState } = require('prismarine-physics')
 const { Vec3 } = require('vec3')
 
-const mcData = require('minecraft-data')('1.13.2')
-const Block = require('prismarine-block')('1.13.2')
+const mcData = require('minecraft-data')('26.2')
+const Block = require('prismarine-block')('26.2')
 
 const physics = Physics(mcData, world)
 const controls = {
@@ -95,3 +102,22 @@ Read only properties:
   - jump
   - sprint
   - sneak
+
+## Validation
+
+The complete physics suite passes 19 tests. The released package is also part
+of the live GAME LAB test against the official Minecraft Java 26.2 server.
+
+## Maintenance
+
+Open Minecraft 26.2 and GAME LAB issues or pull requests in this repository.
+
+## Credits and license
+
+Derived from
+[PrismarineJS prismarine-physics](https://github.com/PrismarineJS/prismarine-physics).
+The upstream history and contributor attribution are retained. Complexity-ML
+maintains this 26.2 distribution independently and is not affiliated with
+Mojang or Microsoft.
+
+Licensed under the [MIT License](LICENSE).
